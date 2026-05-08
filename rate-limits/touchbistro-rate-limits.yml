@@ -9,24 +9,22 @@ reconciled: false
 tags:
 - POS
 - Restaurant
-- iPad
-- SaaS
 - Hospitality
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for TouchBistro. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: TouchBistro does not expose a public API; rate limits are not applicable.
+notes: Partner integrations are governed by individual partner agreements.
 sources:
-- https://www.touchbistro.com/
+- https://www.touchbistro.com/integrations/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+- name: N/A
+  scope: n/a
+  metric: n/a
+  limit: not applicable (no public API)
+  notes: No public REST API exposed.
 policies:
 - name: Backoff Strategy
   description: Clients should implement exponential backoff with jitter and honor any Retry-After header.

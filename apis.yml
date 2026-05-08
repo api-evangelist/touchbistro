@@ -2,28 +2,44 @@ aid: touchbistro
 url: https://raw.githubusercontent.com/api-evangelist/touchbistro/refs/heads/main/apis.yml
 name: TouchBistro
 x-type: company
-description: >-
-  TouchBistro is a restaurant POS designed for iPad with reservations, online ordering, loyalty, and gift card capabilities.
+description: TouchBistro is a restaurant point-of-sale platform. TouchBistro does not maintain a publicly
+  documented developer API portal; instead, it integrates with select third-party services (accounting,
+  payment processing, scheduling, loyalty) through partner integrations rather than a self-serve public
+  API.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - POS
-  - Restaurant
-  - iPad
-  - SaaS
-  - Hospitality
+- POS
+- Restaurant
+- Hospitality
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+- aid: touchbistro:partner-integrations
+  name: TouchBistro Partner Integrations
+  description: TouchBistro does not publish an open developer API. Integration with third-party services
+    is implemented via direct partner programs (e.g., 7shifts, MarginEdge, Restaurant365, Chase, Worldpay,
+    Moneris).
+  humanURL: https://www.touchbistro.com/integrations/
+  tags:
+  - Partner
+  - Integrations
+  properties:
+  - type: Marketing
+    url: https://www.touchbistro.com/integrations/
+  - type: Help
+    url: https://help.touchbistro.com/
 common:
-  - type: Website
-    url: https://www.touchbistro.com/
-  - type: Plans
-    url: plans/touchbistro-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/touchbistro-rate-limits.yml
-  - type: FinOps
-    url: finops/touchbistro-finops.yml
+- type: Website
+  url: https://www.touchbistro.com/
+- type: Developer
+  url: https://www.touchbistro.com/integrations/
+- type: Plans
+  url: plans/touchbistro-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/touchbistro-rate-limits.yml
+- type: FinOps
+  url: finops/touchbistro-finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
