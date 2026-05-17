@@ -1,7 +1,7 @@
 aid: touchbistro
 url: https://raw.githubusercontent.com/api-evangelist/touchbistro/refs/heads/main/apis.yml
 name: TouchBistro
-x-type: company
+kind: company
 description: TouchBistro is a restaurant point-of-sale platform. TouchBistro does not maintain a publicly
   documented developer API portal; instead, it integrates with select third-party services (accounting,
   payment processing, scheduling, loyalty) through partner integrations rather than a self-serve public
