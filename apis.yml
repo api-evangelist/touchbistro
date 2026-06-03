@@ -2,48 +2,152 @@ aid: touchbistro
 url: https://raw.githubusercontent.com/api-evangelist/touchbistro/refs/heads/main/apis.yml
 name: TouchBistro
 kind: company
-description: TouchBistro is a restaurant point-of-sale platform. TouchBistro does not maintain a publicly
-  documented developer API portal; instead, it integrates with select third-party services (accounting,
-  payment processing, scheduling, loyalty) through partner integrations rather than a self-serve public
-  API.
+description: TouchBistro is an iPad-based restaurant point-of-sale (POS) and management platform covering
+  payments, online ordering, reservations, loyalty, gift cards, marketing, inventory, labor, and reporting.
+  TouchBistro does not publish an open, self-serve developer API or a public developer portal; it exposes
+  a private, partner-only integration API. The CEO has publicly confirmed an API exists but is not openly
+  promoted. Third-party software providers must apply to the integration partner program, be approved,
+  and are issued monitored API keys under negotiated commercial terms (contact integratedpartners@touchbistro.com).
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - POS
   - Restaurant
   - Hospitality
+  - Payments
+  - Integrations
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-06-03'
 specificationVersion: '0.19'
 apis:
   - aid: touchbistro:partner-integrations
     name: TouchBistro Partner Integrations
-    description: TouchBistro does not publish an open developer API. Integration with third-party services
-      is implemented via direct partner programs (e.g., 7shifts, MarginEdge, Restaurant365, Chase, Worldpay,
-      Moneris).
-    humanURL: https://www.touchbistro.com/integrations/
+    description: TouchBistro does not publish an open developer API or public API reference. Integration
+      with third-party services is implemented via a private, approval-gated integration partner program.
+      Approved partners receive monitored API keys under negotiated commercial terms. There is no public
+      OpenAPI specification, no self-serve developer portal, and no public SDK. Partner enquiries go to
+      integratedpartners@touchbistro.com.
+    humanURL: https://www.touchbistro.com/features/integrations/
     tags:
     - Partner
     - Integrations
     properties:
     - type: Marketing
-      url: https://www.touchbistro.com/integrations/
+      url: https://www.touchbistro.com/features/integrations/
     - type: Help
-      url: https://help.touchbistro.com/
+      url: https://www.touchbistro.com/help/articles/chapter-11-integrations/
+    - type: Support
+      url: integratedpartners@touchbistro.com
 common:
+  - type: Website
+    url: https://www.touchbistro.com/
+  - type: Developer
+    url: https://www.touchbistro.com/features/integrations/
   - type: GitHubOrganization
     url: https://github.com/TouchBistro
   - type: LinkedIn
     url: https://www.linkedin.com/company/touchbistro
-  - type: Website
-    url: https://www.touchbistro.com/
-  - type: Developer
-    url: https://www.touchbistro.com/integrations/
+  - type: Pricing
+    url: https://www.touchbistro.com/pricing/
+  - type: Help
+    url: https://www.touchbistro.com/help/
   - type: Plans
     url: plans/touchbistro-plans-pricing.yml
   - type: RateLimits
     url: rate-limits/touchbistro-rate-limits.yml
   - type: FinOps
     url: finops/touchbistro-finops.yml
+  - type: Features
+    data:
+    - name: Point of Sale
+      description: Cloud-based iPad POS that is the core engine of restaurant operations.
+    - name: Payment Processing
+      description: TouchBistro Payments plus integrated processing via Chase, Worldpay, and Moneris.
+    - name: Tableside Ordering
+      description: Mobile POS for capturing orders, upsells, and split checks at the table.
+    - name: Kitchen Display System
+      description: Connects front and back of house for timely order fulfillment.
+    - name: Online Ordering
+      description: Direct online ordering through the restaurant's own channels.
+    - name: Reservations
+      description: Capacity management, waitlists, and VIP guest handling.
+    - name: Loyalty and Gift Cards
+      description: Rewards program and modern digital gift cards to drive repeat business.
+    - name: Marketing
+      description: Automated, data-driven guest marketing campaigns.
+    - name: Inventory Management
+      description: Stock tracking to minimize waste and reduce food costs.
+    - name: Labor Management
+      description: Staff scheduling and payroll cost monitoring.
+    - name: Reporting and Analytics
+      description: Cloud reports accessible remotely for data-driven decisions.
+    - name: Menu and Floor Plan Management
+      description: Build menus and design floor layouts, sections, and table status.
+  - type: Integrations
+    data:
+    - name: Chase
+      description: Payment processing partner.
+    - name: Worldpay
+      description: Payment processing partner.
+    - name: Moneris
+      description: Payment processing partner.
+    - name: QuickBooks
+      description: Accounting integration.
+    - name: Xero
+      description: Accounting integration.
+    - name: Sage Intacct
+      description: Accounting integration.
+    - name: Restaurant365
+      description: Accounting and inventory integration.
+    - name: MarginEdge
+      description: Accounting, analytics, and inventory integration.
+    - name: Shogo
+      description: Accounting automation integration.
+    - name: DAVO by Avalara
+      description: Sales tax automation integration.
+    - name: Avero
+      description: Business analytics integration.
+    - name: WISK.ai
+      description: Inventory management integration.
+    - name: MarketMan
+      description: Inventory management integration.
+    - name: Optimum Control
+      description: Inventory management integration.
+    - name: Craftable
+      description: Inventory management integration.
+    - name: 7shifts
+      description: Staff scheduling and labor management integration.
+    - name: Push Operations
+      description: Scheduling and payroll integration.
+    - name: DoorDash
+      description: Online ordering integration.
+    - name: Deliverect
+      description: Delivery aggregator integration.
+    - name: UrbanPiper
+      description: Delivery aggregator integration.
+    - name: Coverdash
+      description: Business insurance integration.
+  - type: UseCases
+    data:
+    - name: Payment Acceptance
+      description: Process in-person and online card payments through integrated processors.
+    - name: Accounting Sync
+      description: Push sales and labor data to accounting platforms for reconciliation.
+    - name: Inventory and Cost Control
+      description: Sync menu and sales data with inventory tools to manage food cost and waste.
+    - name: Delivery and Online Ordering
+      description: Route third-party delivery and online orders into the POS.
+    - name: Staff Scheduling and Payroll
+      description: Connect labor data to scheduling and payroll providers.
+  - type: Solutions
+    data:
+    - name: Full-Service Restaurants
+      description: POS and management for full-service dining.
+    - name: Quick-Service and Counter Service
+      description: Fast ordering and payment for QSR and counter formats.
+    - name: Bars and Breweries
+      description: Tab management, fast reorders, and floor management for bars.
+    - name: Cafes and Coffee Shops
+      description: Quick checkout and loyalty for cafes.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
