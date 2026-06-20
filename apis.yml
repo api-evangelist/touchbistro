@@ -8,7 +8,7 @@ description: TouchBistro is an iPad-based restaurant point-of-sale (POS) and man
   a private, partner-only integration API. The CEO has publicly confirmed an API exists but is not openly
   promoted. Third-party software providers must apply to the integration partner program, be approved,
   and are issued monitored API keys under negotiated commercial terms (contact integratedpartners@touchbistro.com).
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - POS
   - Restaurant
