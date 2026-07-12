@@ -38,6 +38,10 @@ apis:
     - type: Support
       url: integratedpartners@touchbistro.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/touchbistro-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/touchbistro-domain-security.yml
   - type: Website
     url: https://www.touchbistro.com/
   - type: Developer
