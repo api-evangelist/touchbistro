@@ -16,10 +16,6 @@ TouchBistro is an iPad-based restaurant point-of-sale (POS) and management platf
 
 ## APIs
 
-### TouchBistro Partner Integrations
-TouchBistro does not publish an open developer API or public API reference. Integration with third-party services is implemented via a private, approval-gated integration partner program. Approved partners receive monitored API keys under negotiated commercial terms. There is no public OpenAPI specification, no self-serve developer portal, and no public SDK. Partner enquiries go to integratedpartners@touchbistro.com.
-
-**Human URL:** [https://www.touchbistro.com/features/integrations/](https://www.touchbistro.com/features/integrations/)
 
 #### Tags:
 
