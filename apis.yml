@@ -3,6 +3,17 @@ url: https://raw.githubusercontent.com/api-evangelist/touchbistro/refs/heads/mai
 name: TouchBistro
 kind: company
 description: TouchBistro is an iPad-based restaurant point-of-sale (POS) and management platform covering payments, online ordering, reservations, loyalty, gift cards, marketing, inventory, labor, and reporting. TouchBistro does not publish an open, self-serve developer API or a public developer portal; it exposes a private, partner-only integration API. The CEO has publicly confirmed an API exists but is not openly promoted. Third-party software providers must apply to the integration partner program, be approved, and are issued monitored API keys under negotiated commercial terms (contact integratedpartners@touchbistro.com).
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
